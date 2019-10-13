@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  web:
+    container_name: docker-react-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: ['80:3000']
+    volumes:
+      - ./src:/usr/src/app/src
+      - ./node_modules:/usr/src/cache
+    environment:
+      - NODE_ENV=development
+    command: bash -c "cp -ar /usr/src/app/node_modules/. /usr/src/cache && npm run dev"

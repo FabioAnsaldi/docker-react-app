@@ -1,0 +1,32 @@
+### Common
+README.md
+CHANGELOG.md
+docker-compose.yml
+Dockerfile
+.dockerignore
+
+### git
+.git
+.gitattributes
+.gitignore
+
+### JetBrains editor
+.idea
+
+### React SSR framework
+.next
+.eslintrc.js
+
+### Node and managers
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Dependency directories
+node_modules/
+
+### iOS
+.DS_Store
+trash/
