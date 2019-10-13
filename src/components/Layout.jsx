@@ -7,10 +7,10 @@ const Layout = props => (
         <Header />
         {props.children}
     </div>
-)
+);
 
 Layout.propTypes = {
     children: PropTypes.node.isRequired
-}
+};
 
 export default Layout

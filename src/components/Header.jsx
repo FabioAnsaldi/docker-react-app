@@ -11,6 +11,6 @@ const Header = () => (
             <a title="About Page">About</a>
         </Link>
     </div>
-)
+);
 
 export default Header
